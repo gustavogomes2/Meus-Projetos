@@ -1,5 +1,6 @@
 import folium
 from folium.plugins import Fullscreen
+from
 
 mapa = folium.Map(
     location = [-13.7048968, -69.6590157],
@@ -9,9 +10,11 @@ mapa = folium.Map(
 
 Fullscreen(
     position = 'topright',
-     title = 'Tela Cheia',
-     title_cancel = 'Sair da Tela Cheia',
-     force_separate_button=True).add_to(mapa)
+    title = 'Entrar/Sair da Tela Cheia',
+    title_cancel = 'Sair da Tela Cheia',
+    force_separate_button=True).add_to(mapa)
+
+     
 
 folium.Marker(location = [-15.7750837,-48.0772776], popup = '3',icon = folium.Icon(color='blue', icon='info-sign')).add_to(mapa) 
 folium.Marker(location = [-23.1119265,-47.2646612], popup = '15',icon = folium.Icon(color='blue', icon='info-sign')).add_to(mapa)
