@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e8ac31ea658a47a5b25e9de1e021d02d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e8ac31ea658a47a5b25e9de1e021d02d" ></div>
+        
+</body>
+<script>    
+    
+            var map_e8ac31ea658a47a5b25e9de1e021d02d = L.map(
+                "map_e8ac31ea658a47a5b25e9de1e021d02d",
+                {
+                    center: [-13.7048968, -69.6590157],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_25dcc7e0014b478dbe491b237edd2877 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e8ac31ea658a47a5b25e9de1e021d02d);
+        
+    
+            var marker_7cd2622e8e9e4bd8a3459f06492ffa1e = L.marker(
+                [-15.7750837, -48.0772776],
+                {}
+            ).addTo(map_e8ac31ea658a47a5b25e9de1e021d02d);
+        
+    
+            var icon_f706f403f1124b2cbeb1a894acfce7dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7cd2622e8e9e4bd8a3459f06492ffa1e.setIcon(icon_f706f403f1124b2cbeb1a894acfce7dc);
+        
+    
+        var popup_a00fe76ea993450f9f396943a0d4b66c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e16b0c90df7943e0864b1497fe50f296 = $(`<div id="html_e16b0c90df7943e0864b1497fe50f296" style="width: 100.0%; height: 100.0%;"><i>30 - BRASÍLIA</i></div>`)[0];
+            popup_a00fe76ea993450f9f396943a0d4b66c.setContent(html_e16b0c90df7943e0864b1497fe50f296);
+        
+
+        marker_7cd2622e8e9e4bd8a3459f06492ffa1e.bindPopup(popup_a00fe76ea993450f9f396943a0d4b66c)
+        ;
+
+        
+    
+    
+            var marker_eab151951475495baf2c854f303bdb6e = L.marker(
+                [-23.1119265, -47.2646612],
+                {}
+            ).addTo(map_e8ac31ea658a47a5b25e9de1e021d02d);
+        
+    
+            var icon_6152f17ebf2e4fa2aa78a816513f0810 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eab151951475495baf2c854f303bdb6e.setIcon(icon_6152f17ebf2e4fa2aa78a816513f0810);
+        
+    
+        var popup_e67a0112d7c34bc9b67570f8b380848c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41203bcb17fa43129579b604b535ebbf = $(`<div id="html_41203bcb17fa43129579b604b535ebbf" style="width: 100.0%; height: 100.0%;"><i>15 - INDAIATUBA-SP</i></div>`)[0];
+            popup_e67a0112d7c34bc9b67570f8b380848c.setContent(html_41203bcb17fa43129579b604b535ebbf);
+        
+
+        marker_eab151951475495baf2c854f303bdb6e.bindPopup(popup_e67a0112d7c34bc9b67570f8b380848c)
+        ;
+
+        
+    
+    
+            var marker_b0b135389f4f41b7b7d0981aef6cac9e = L.marker(
+                [-2.5606303, -44.3281622],
+                {}
+            ).addTo(map_e8ac31ea658a47a5b25e9de1e021d02d);
+        
+    
+            var icon_29f4d885155c4b94a100284e9f53e32b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b0b135389f4f41b7b7d0981aef6cac9e.setIcon(icon_29f4d885155c4b94a100284e9f53e32b);
+        
+    
+        var popup_752a6bdba4bd4a28a2c82e89ce49f348 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e69a50679de43059c8ee78c61531a4c = $(`<div id="html_3e69a50679de43059c8ee78c61531a4c" style="width: 100.0%; height: 100.0%;"><i>40 - SÂO LUIZ-MA</i></div>`)[0];
+            popup_752a6bdba4bd4a28a2c82e89ce49f348.setContent(html_3e69a50679de43059c8ee78c61531a4c);
+        
+
+        marker_b0b135389f4f41b7b7d0981aef6cac9e.bindPopup(popup_752a6bdba4bd4a28a2c82e89ce49f348)
+        ;
+
+        
+    
+    
+            var marker_f684dcc2aa8c4e689a01bae0a9a8a047 = L.marker(
+                [-22.7146204, -47.6918722],
+                {}
+            ).addTo(map_e8ac31ea658a47a5b25e9de1e021d02d);
+        
+    
+            var icon_2bb03246281e42768b694cdb145726f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f684dcc2aa8c4e689a01bae0a9a8a047.setIcon(icon_2bb03246281e42768b694cdb145726f1);
+        
+    
+        var popup_4171a8c4eba84839828fe7b4a9eb1563 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b139795f2fa4f9fb1da908461cc545a = $(`<div id="html_1b139795f2fa4f9fb1da908461cc545a" style="width: 100.0%; height: 100.0%;"><i>3 - PIRACICABA-SP</i></div>`)[0];
+            popup_4171a8c4eba84839828fe7b4a9eb1563.setContent(html_1b139795f2fa4f9fb1da908461cc545a);
+        
+
+        marker_f684dcc2aa8c4e689a01bae0a9a8a047.bindPopup(popup_4171a8c4eba84839828fe7b4a9eb1563)
+        ;
+
+        
+    
+    
+            var marker_5da4ebec2ba94b9aabbe0718b036c2c3 = L.marker(
+                [-22.8425423, -47.2963221],
+                {}
+            ).addTo(map_e8ac31ea658a47a5b25e9de1e021d02d);
+        
+    
+            var icon_8dab3e7f5d044bd19b1a53fbc4c3c5cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5da4ebec2ba94b9aabbe0718b036c2c3.setIcon(icon_8dab3e7f5d044bd19b1a53fbc4c3c5cd);
+        
+    
+        var popup_9681c460fbc84d2d80459f683eb956b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31cc1ecfae614a39b0cda82c57ea2482 = $(`<div id="html_31cc1ecfae614a39b0cda82c57ea2482" style="width: 100.0%; height: 100.0%;"><i>30 - SUMARÉ-SP</i></div>`)[0];
+            popup_9681c460fbc84d2d80459f683eb956b7.setContent(html_31cc1ecfae614a39b0cda82c57ea2482);
+        
+
+        marker_5da4ebec2ba94b9aabbe0718b036c2c3.bindPopup(popup_9681c460fbc84d2d80459f683eb956b7)
+        ;
+
+        
+    
+    
+            var marker_fdd05f08d2c241db9b987c53a857ca7f = L.marker(
+                [-9.9951627, -68.7029273],
+                {}
+            ).addTo(map_e8ac31ea658a47a5b25e9de1e021d02d);
+        
+    
+            var icon_926766947af34ebea94427a2a3a8b9ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fdd05f08d2c241db9b987c53a857ca7f.setIcon(icon_926766947af34ebea94427a2a3a8b9ed);
+        
+    
+        var popup_12523b12cf414b08abe4445ab87dfe9e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e349d559e7748299c9e5dc35ac8d9ea = $(`<div id="html_9e349d559e7748299c9e5dc35ac8d9ea" style="width: 100.0%; height: 100.0%;"><i>30 - RIO BRANCO-ACRE</i></div>`)[0];
+            popup_12523b12cf414b08abe4445ab87dfe9e.setContent(html_9e349d559e7748299c9e5dc35ac8d9ea);
+        
+
+        marker_fdd05f08d2c241db9b987c53a857ca7f.bindPopup(popup_12523b12cf414b08abe4445ab87dfe9e)
+        ;
+
+        
+    
+</script>
