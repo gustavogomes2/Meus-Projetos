@@ -4,7 +4,7 @@ from folium.plugins import MarkerCluster
 import pandas as pds
 
 #IMPORTANDO A PLANILHA COM DADOS
-ler = pds.read_excel(r'C:\Users\Gustavo Gomes\Documents\Programação\Meus-Projetos\Mapa Interativo\dados.xlsx') 
+ler = pds.read_excel(r'C:\Users\Gustavo Gomes\Documents\Programação\Meus-Projetos\Mapa Interativo\dados\dadosmap.xlsx') 
 
 #MAPA: CONFIGURAÇÕES GERAIS
 mapa = folium.Map(
