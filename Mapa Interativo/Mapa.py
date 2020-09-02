@@ -20,9 +20,10 @@ Fullscreen(
 cluster = MarkerCluster(name='SÃO PAULO').add_to(mapa)     
 cluster2 = MarkerCluster(name='BRASÍLIA').add_to(mapa)
 cluster3 = MarkerCluster(name='OUTROS').add_to(mapa)
+cluster3 = 
 
 #DADOS
-folium.Marker(location = [-15.7750837,-48.0772776], popup = '3',icon = folium.Icon(color='blue', icon='info-sign')).add_to(cluster2) 
+folium.Marker(location = [-15.7750837,-48.0772776], popup = '<b>3<\b>',icon = folium.Icon(color='blue', icon='info-sign')).add_to(cluster2) 
 folium.Marker(location = [-23.1119265,-47.2646612], popup = '15',icon = folium.Icon(color='blue', icon='info-sign')).add_to(cluster)
 folium.Marker(location = [-2.5606303,-44.3281622], popup = '40',icon = folium.Icon(color='blue', icon='info-sign')).add_to(cluster3)
 folium.Marker(location = [-22.7146204,-47.6918722], popup = '3',icon = folium.Icon(color='blue', icon='info-sign')).add_to(cluster)
