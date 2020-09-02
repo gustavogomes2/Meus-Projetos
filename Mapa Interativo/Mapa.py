@@ -31,7 +31,7 @@ for index, linha in ler.iterrows():
 print(ler)
 #CRIANDO O LOOP
 for index, linha in ler.iterrows():
-    folium.Marker(location=[linha['LAT'], linha['LONG']], popup = linha['UF']).add_to(cluster)
+    folium.Marker(location=[linha['LAT'], linha['LONG']], popup = linha['UF2']).add_to(cluster)
 
 #INTERAÇÕES ENTRE OS MARCADORES.
 
