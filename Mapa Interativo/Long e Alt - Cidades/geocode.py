@@ -12,14 +12,14 @@ print('-=-'*20)
 print(f'{c:-^70}')
 print(ler)
 
-a = 'LONGITUDE'
+a = 'LATITUDE'
 print(f'{a:-^70}')
 lista = str(ler2['geometry'].x).split()
 for i in range(len(lista)-1):
     if i%2 == 1:
         print(lista[i])
 
-b = 'ALTITUDE'
+b = 'LONGITUDE'
 print(f'{b:-^70}')
 lista = str(ler2['geometry'].y).split()
 for i in range(len(lista)-1):
