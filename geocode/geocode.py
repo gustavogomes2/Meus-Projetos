@@ -5,7 +5,7 @@ ler = pds.read_excel(r'C:\Users\Gustavo Gomes\Documents\Programação\Meus-Proje
 #print(ler) plota a tabela
 ler2 = gpds.tools.geocode(ler['UF2'], provider = 'nominatim', user_agent="Intro Geocode")
 
-#MELHORAR: CRIAR UM ALGORITMO QUE PULA ERROS DE PESQUISA.
+#MELHORAR O ALGORITMO AFIM DE PULAR ERROS DE PESQUISA, QUANDO ACONTECER.
 
 c = 'DADOS: QUANTIDADE DE ALUNOS EM CADA CIDADE'
 print('-=-'*20)
