@@ -1,6 +1,10 @@
 import folium
 from folium.plugins import Fullscreen
 from folium.plugins import MarkerCluster
+import pandas as pds
+
+#IMPORTANDO A PLANILHA COM DADOS
+ler = pds.read_excel(r'C:\Users\Gustavo Gomes\Documents\Programação\Meus-Projetos\Mapa Interativo\Long e Alt - Cidades\arquivtest.xlsx')
 
 #MAPA: CONFIGURAÇÕES GERAIS
 mapa = folium.Map(
@@ -20,15 +24,12 @@ Fullscreen(
 cluster = MarkerCluster(name='SÃO PAULO').add_to(mapa)     
 cluster2 = MarkerCluster(name='BRASÍLIA').add_to(mapa)
 cluster3 = MarkerCluster(name='OUTROS').add_to(mapa)
-cluster3 = 
 
-#DADOS
-folium.Marker(location = [-15.7750837,-48.0772776], popup = '<b>3<\b>',icon = folium.Icon(color='blue', icon='info-sign')).add_to(cluster2) 
-folium.Marker(location = [-23.1119265,-47.2646612], popup = '15',icon = folium.Icon(color='blue', icon='info-sign')).add_to(cluster)
-folium.Marker(location = [-2.5606303,-44.3281622], popup = '40',icon = folium.Icon(color='blue', icon='info-sign')).add_to(cluster3)
-folium.Marker(location = [-22.7146204,-47.6918722], popup = '3',icon = folium.Icon(color='blue', icon='info-sign')).add_to(cluster)
-folium.Marker(location = [-22.8425423,-47.2963221], popup = '30',icon = folium.Icon(color='blue', icon='info-sign')).add_to(cluster)
-folium.Marker(location = [-9.9951627,-68.7029273], popup = '30',icon = folium.Icon(color='blue', icon='info-sign')).add_to(cluster3)
+#MARCADOR
+folium.Marker(location = [-15.7750837,-48.0772776], popup = '<b>MARCADOR<\b>',icon = folium.Icon(color='blue', icon='info-sign')).add_to(cluster2) 
+
+#CRIANDO O LOOP
+
 #folium.CircleMarker(location=[-23.8641866,-46.4303154], radius=25, popup='<b>SANTOS</b>', color='#3186cc', fill=True, fill_color='#3186cc').add_to(cluster)
 
 #BOTÃO DE CONTROLE "ESTADOS"
