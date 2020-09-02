@@ -4,7 +4,7 @@ from folium.plugins import MarkerCluster
 import pandas as pds
 
 #IMPORTANDO A PLANILHA COM DADOS
-ler = pds.read_excel(r'C:\Users\Gustavo Gomes\Documents\Programação\Meus-Projetos\Mapa Interativo\test2.xlsx') 
+ler = pds.read_excel(r'C:\Users\Gustavo Gomes\Documents\Programação\Meus-Projetos\Mapa Interativo\dadostest.xlsx') 
 
 #MAPA: CONFIGURAÇÕES GERAIS
 mapa = folium.Map(
@@ -26,15 +26,12 @@ Fullscreen(
    
 #INTERAÇÕES ENTRE OS MARCADORES.
 for index, linha in ler.iterrows():
-    
-cluster = MarkerCluster(name='UF').add_to(mapa)     
-cluster2 = MarkerCluster(name='BRASÍLIA').add_to(mapa)
-cluster3 = MarkerCluster(name='OUTROS').add_to(mapa)
+    cluster = MarkerCluster(name='UF').add_to(mapa)     
 
 print(ler)
 #CRIANDO O LOOP
 for index, linha in ler.iterrows():
-    folium.Marker(location=[linha['LATC'], linha['LONGC']], popup = linha['UF']).add_to(cluster)
+    folium.Marker(location=[linha['LAT'], linha['LONG']], popup = linha['UF']).add_to(cluster)
 
 #INTERAÇÕES ENTRE OS MARCADORES.
 
