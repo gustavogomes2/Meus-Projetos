@@ -23,7 +23,7 @@ Fullscreen(
 
 #INTERAÇÕES ENTRE OS MARCADORES.
 for index, linha in ler.iterrows():
-    cluster = MarkerCluster(name='UF').add_to(mapa)   
+    cluster = MarkerCluster().add_to(mapa)   
 
 print(ler)
 #CRIANDO O LOOP
