@@ -28,10 +28,10 @@ for index, linha in ler.iterrows():
 print(ler)
 #CRIANDO O LOOP
 for index, linha in ler.iterrows():
-    folium.Marker(location=[linha['LAT'], linha['LONG']], popup = linha['UF2']).add_to(cluster)
+    folium.Marker(location=[linha['LAT'], linha['LONG']], popup = linha['UF2'],  icon=folium.Icon(color='purple', icon='info-sign')).add_to(cluster)
 
 #folium.CircleMarker(location=[-23.8641866,-46.4303154], radius=25, popup='<b>SANTOS</b>', color='#3186cc', fill=True, fill_color='#3186cc').add_to(cluster)
 
 #BOTÃO DE CONTROLE "ESTADOS"
 #folium.LayerControl().add_to(mapa)
-mapa.save('mapa.html')
+mapa.save(r'C:\Users\Gustavo Gomes\Documents\Programação\Meus-Projetos\Mapa Interativo\mapa.html')
