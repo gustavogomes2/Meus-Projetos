@@ -35,3 +35,6 @@ for index, linha in ler.iterrows():
 #BOTÃO DE CONTROLE "ESTADOS"
 #folium.LayerControl().add_to(mapa)
 mapa.save('mapa.html')
+
+no arquivo mapa.html
+TROCAR: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/> POR: <link rel="stylesheet" href="C:SEU ENDEREÇO LOCAL\MarkerCluster.Default.css"/>  isso porque o diretório do MarkerCluster.Default.css está em um arquivo local! e ele é o responsável em trocar as cores dos marcadores de verde para azul. Caso contrário poderá ocasionar em erro.
