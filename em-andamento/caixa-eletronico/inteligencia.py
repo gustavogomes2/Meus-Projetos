@@ -24,7 +24,7 @@ while programa_situacao == True:
             if saque[-1] == '1' or saque[-1] == '3':
                 print('Nossos caixas só aceitam valores com o último dígito diferente de 1 e 3.')
                 decisao = ''
-                while decisao != 'S' or decisao != 'N':
+                while decisao != 'S' or decisao != 'N' :
                     decisao = str(input('Deseja fazer mais transações? [\033[32;40mS\033[m/\033[31;40mN\033[m] ')).strip().upper()
                     if decisao == 'N':
                         print('Volte sempre.')
@@ -37,14 +37,16 @@ while programa_situacao == True:
             elif soma_caixa < int(saque):
 
                 print('Valor indisponível nesse caixa')
-                decisao = str(input('Deseja fazer mais transações? [\033[32;40mS\033[m/\033[31;40mN\033[m] ')).strip().upper()
-                if decisao == 'N':
-                    print('Volte sempre.')
-                    programa_situacao = False
-                    break
+                decisao = ''
+                while decisao != 'S' or decisao != 'N' :
+                    decisao = str(input('Deseja fazer mais transações? [\033[32;40mS\033[m/\033[31;40mN\033[m] ')).strip().upper()
+                    if decisao == 'N':
+                        print('Volte sempre.')
+                        programa_situacao = False
+                        break
 
-                elif decisao == 'S':
-                    break
+                    elif decisao == 'S':
+                        break
             
             elif soma_caixa > int(saque):
                 
