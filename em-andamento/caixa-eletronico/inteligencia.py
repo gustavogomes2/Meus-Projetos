@@ -1,8 +1,8 @@
 import time
 
 programa_situacao = True
-notas_sucesso = [[200, 2], [100, 4], [50, 10], [20, 15], [10, 20], [5, 25], [2, 7]]
-notas_temporarias = [[200, 2], [100, 4], [50, 10], [20, 15], [10, 20], [5, 25], [2, 7]]
+notas_sucesso = [[200, 1], [100, 2], [50, 2], [20, 2], [10, 2], [5, 2], [2, 2]]
+notas_temporarias = [[200, 1], [100, 2], [50, 2], [20, 2], [10, 2], [5, 2], [2, 2]]
 
 
 soma_caixa = notas_sucesso[0][0]*notas_sucesso[0][1] + notas_sucesso[1][0]*notas_sucesso[0][1] + notas_sucesso[2][0]*notas_sucesso[0][1] + notas_sucesso[3][0]*notas_sucesso[0][1] + notas_sucesso[4][0]*notas_sucesso[5][1]+ notas_sucesso[6][0]*notas_sucesso[0][1]
